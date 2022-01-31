@@ -115,13 +115,13 @@ namespace ProblematicProblem
                 Console.Write($"Ah got it! {userName}, your random activity is: {randomActivity}! Is this ok or do you want to grab another activity? Keep/Redo: ");
                 Console.WriteLine("");
                 string response2 = (Console.ReadLine());
-                if (response2 == "keep")
+                if (response2 == "redo")
                 {
-                    cont = false;
+                    cont = true;
                 }
                 else
                 {
-                    cont = true;
+                    cont = false;
                 }
             }
         }
